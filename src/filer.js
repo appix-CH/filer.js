@@ -40,6 +40,8 @@ self.BlobBuilder = self.BlobBuilder || self.MozBlobBuilder ||
 if (self.FileError === undefined) {
   var FileError = function() {};
   FileError.prototype.prototype = Error.prototype;
+} else {
+    FileError = self.FileError;
 }
 
 var Util = {
